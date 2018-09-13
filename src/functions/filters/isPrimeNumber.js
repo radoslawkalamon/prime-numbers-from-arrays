@@ -3,10 +3,11 @@
  * @returns {Boolean}
  */
 export default (_element) => {
-  for (let i = 2, s = Math.sqrt(_element); i <= s; i += i) {
-    if (_element % i === 0) {
+  const element = Math.abs(_element);
+  for (let i = 2, s = Math.sqrt(element); i <= s; i += i) {
+    if (element % i === 0) {
       return false;
     }
   }
-  return _element !== 1;
+  return element !== 0 && element !== 1;
 };
