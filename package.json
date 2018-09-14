@@ -2,7 +2,7 @@
   "name": "prime-numbers-from-arrays",
   "version": "2.0.0",
   "description": "Get all prime numbers from arrays, sorted ascending",
-  "main": "index.js",
+  "main": "./dist/prime-numbers-from-arrays.min.js",
   "scripts": {
     "rollup": "rollup ./src/prime-numbers-from-arrays.js --file ./dist/prime-numbers-from-arrays.bundle.js --format cjs",
     "babel": "npx babel ./dist/prime-numbers-from-arrays.bundle.js --out-file ./dist/prime-numbers-from-arrays.babel.js --source-map",

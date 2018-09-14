@@ -4,10 +4,10 @@
  */
 export default (_element) => {
   const element = Math.abs(_element);
-  for (let i = 2, s = Math.sqrt(element); i <= s; i += i) {
+  for (let i = 2; i < element; i += 1) {
     if (element % i === 0) {
       return false;
     }
   }
-  return element !== 0 && element !== 1;
+  return element > 1;
 };

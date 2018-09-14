@@ -3,4 +3,4 @@
  * @returns {Boolean}
  */
 
-export default (_element) => typeof _element !== 'number';
+export default _element => typeof _element !== 'number';

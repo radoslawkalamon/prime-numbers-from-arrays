@@ -42,6 +42,22 @@ describe('Function itself', () => {
     const value = 4;
     expect(isPrimeNumber(value)).toEqual(false);
   });
+  it('should return FALSE if 15 passed', () => {
+    const value = 15;
+    expect(isPrimeNumber(value)).toEqual(false);
+  });
+  it('should return FALSE if -15 passed', () => {
+    const value = -15;
+    expect(isPrimeNumber(value)).toEqual(false);
+  });
+  it('should return TRUE if 19 passed', () => {
+    const value = 19;
+    expect(isPrimeNumber(value)).toEqual(true);
+  });
+  it('should return TRUE if -19 passed', () => {
+    const value = -19;
+    expect(isPrimeNumber(value)).toEqual(true);
+  });
   it('should return TRUE if big prime number passed', () => {
     const value = 179426549;
     expect(isPrimeNumber(value)).toEqual(true);

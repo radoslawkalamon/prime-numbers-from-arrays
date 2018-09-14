@@ -11,14 +11,6 @@ describe('Function itself', () => {
     expect(getUniqueNumbers(arrayOne, arrayTwo)).toEqual(expectValue);
   });
 
-  it('should return [1] from [1, 1, 1, 1] & [1,1,1,1,1,1]', () => {
-    const arrayOne = [1, 1, 1, 1];
-    const arrayTwo = [1, 1, 1, 1, 1, 1];
-    const expectValue = [1];
-
-    expect(getUniqueNumbers(arrayOne, arrayTwo)).toEqual(expectValue);
-  });
-
   it('should return [1235, 3961, -3429, 4072, 801, 4458] from [1235, 3961, -3429, 4072] & [-3429, 4072, 801, 4458]', () => {
     const arrayOne = [1235, 3961, -3429, 4072];
     const arrayTwo = [-3429, 4072, 801, 4458];
@@ -34,16 +26,12 @@ describe('Function itself', () => {
 
     expect(getUniqueNumbers(arrayOne, arrayTwo)).toEqual(expectValue);
   });
-});
 
-describe('with reduce()', () => {
-  it('should return [1] from [1,1,1,1,1,1,1] & [1,1,1,1,1]', () => {
-    const arrayOne = [1, 1, 1, 1, 1, 1, 1];
-    const arrayTwo = [1, 1, 1, 1, 1];
+  it('should return [1] from [1, 1, 1, 1] & [1,1,1,1,1,1]', () => {
+    const arrayOne = [1, 1, 1, 1];
+    const arrayTwo = [1, 1, 1, 1, 1, 1];
     const expectValue = [1];
 
-    expect([arrayOne, arrayTwo].reduce(getUniqueNumbers)).toEqual(expectValue);
+    expect(getUniqueNumbers(arrayOne, arrayTwo)).toEqual(expectValue);
   });
 });
-
-// .reduce(getUniqueNumbers, [])
