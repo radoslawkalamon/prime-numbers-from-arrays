@@ -6,7 +6,7 @@ import sortASC from './functions/sorts/ascending';
 export default function(...args) {
   return args
     .filter(isArrayWithNumbers)
-    .reduce(getUniqueNumbers, [])
+    .reduce(getUniqueNumbers)
     .filter(isPrimeNumber)
     .sort(sortASC);
 }
