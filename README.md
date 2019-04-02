@@ -10,6 +10,8 @@ getPrimeNumbers([12, 3], [6, 54], ..., [12334, 25124, 12351]) = [...primeNumbers
 
 ## Changelog:
 
-- 31.03.2019 - Version 2.0.1 - dependencies update,
-- 14.09.2018 - Version 2.0.0 - module can accept more than 2 arrays,
+- 02.04.2019 - v2.1.0 - isArrayWithNumbers do not invoke console.warn now,
+- 02.04.2019 - v2.0.2 - repository cleanup & added License,
+- 31.03.2019 - v2.0.1 - dependencies update,
+- 14.09.2018 - v2.0.0 - module can accept more than 2 arrays,
 - 31.01.2018 - Initial commit.
