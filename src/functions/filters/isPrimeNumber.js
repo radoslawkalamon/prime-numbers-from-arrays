@@ -7,7 +7,7 @@
  * @param {Number} n
  * @returns {Boolean}
  */
-export default (n) {
+export default (n) => {
   if (n < 4) return n > 1;
   if (n % 2 === 0 || n % 3 === 0) return false;
 
