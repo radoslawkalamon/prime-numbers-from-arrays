@@ -1,7 +1,9 @@
 /**
- * @param {Number} element
+ * Check if element is array of integers.
+ *
+ * @param {Array} element
  * @returns {Boolean}
  */
 export default (element) => {
-  return Array.isArray(element) && element.length !== 0 && element.every(Number.isInteger);
+  return Array.isArray(element) && element.every(Number.isInteger);
 };

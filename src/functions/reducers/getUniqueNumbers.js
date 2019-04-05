@@ -1,6 +1,8 @@
 /**
- * @param {[...Number]} _prevValue
- * @param {[...Number]} _curValue
+ * Get the unique elements of two arrays.
+ *
+ * @param {Array} a
+ * @param {Array} b
  * @returns {Array}
  */
-export default (_prevValue, _curValue) => [...new Set([..._prevValue, ..._curValue])];
+export default (a, b) => [...new Set([...a, ...b])];
