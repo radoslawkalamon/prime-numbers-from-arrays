@@ -4,34 +4,33 @@ import isArrayWithNumber from '../../../../src/functions/filters/isArrayWithNumb
 
 describe('Not Arrays passed', () => {
   it('should return false on Object passed', () => {
-    const element = {};
-    expect(isArrayWithNumber(element)).toBeFalsy();
+    expect(isArrayWithNumber({})).toBeFalsy();
   });
 
   it('should return false on Boolean passed', () => {
-    const element = true;
-    expect(isArrayWithNumber(element)).toBeFalsy();
+    expect(isArrayWithNumber(true)).toBeFalsy();
   });
 
   it('should return false on String passed', () => {
-    const element = 'String';
-    expect(isArrayWithNumber(element)).toBeFalsy();
+    expect(isArrayWithNumber('String')).toBeFalsy();
   });
 
   it('should return false on Null passed', () => {
-    const element = null;
-    expect(isArrayWithNumber(element)).toBeFalsy();
+    expect(isArrayWithNumber(null)).toBeFalsy();
   });
 
   it('should return false on Undefined passed', () => {
-    const element = undefined;
-    expect(isArrayWithNumber(element)).toBeFalsy();
+    expect(isArrayWithNumber(undefined)).toBeFalsy();
   });
 });
 
 describe('Arrays passed', () => {
   afterEach(() => {
     jest.restoreAllMocks();
+  });
+
+  it('should return true on empty Array passed', () => {
+    expect(isArrayWithNumber([])).toBeTruthy();
   });
 
   it('should return true on [1] passed', () => {
@@ -44,11 +43,6 @@ describe('Arrays passed', () => {
     expect(isArrayWithNumber(element)).toBeTruthy();
   });
 
-  it('should return false on empty Array passed', () => {
-    const element = [];
-    expect(isArrayWithNumber(element)).toBeFalsy();
-  });
-
   it('should return false on [1, { key: "value" }, 3]', () => {
     const element = [1, { key: 'value' }, 3];
     expect(isArrayWithNumber(element)).toBeFalsy();
@@ -59,8 +53,8 @@ describe('Arrays passed', () => {
     expect(isArrayWithNumber(element)).toBeFalsy();
   });
 
-  it("should return false on ['String', 2, 3]", () => {
-    const element = ['String', 2, 3];
+  it("should return false on [1, 2, 'String']", () => {
+    const element = [1, 2, 'String'];
     expect(isArrayWithNumber(element)).toBeFalsy();
   });
 
@@ -74,8 +68,8 @@ describe('Arrays passed', () => {
     expect(isArrayWithNumber(element)).toBeFalsy();
   });
 
-  it('should return false on [undefined, 2, 3]', () => {
-    const element = [undefined, 2, 3];
+  it('should return false on [1, 2, undefined]', () => {
+    const element = [1, 2, undefined];
     expect(isArrayWithNumber(element)).toBeFalsy();
   });
 
