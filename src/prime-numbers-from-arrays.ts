@@ -5,9 +5,8 @@ import sortASC from './functions/sorts/ascending';
 
 /**
  * Get all prime numbers from arrays, sorted ascending
- * @param  {...[...Number]} args
  */
-export default function(...args) {
+export default function (...args: unknown[]): number[] {
   return args
     .filter(isArrayWithNumbers)
     .reduce(getUniqueNumbers, [])

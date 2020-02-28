@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": ["es2017", "dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "moduleResolution": "node"
+  },
+  "include": [
+    "./src/prime-numbers-from-arrays.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "./tests/*"
+  ]
+}

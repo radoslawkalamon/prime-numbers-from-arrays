@@ -1,4 +1,3 @@
-/* globals describe, it, expect */
 import ascending from '../../../../src/functions/sorts/ascending';
 
 describe('Function itself', () => {

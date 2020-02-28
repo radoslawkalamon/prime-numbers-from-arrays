@@ -1,5 +1,3 @@
-/* globals describe, it, expect, jest, beforeEach, afterEach */
-
 import isArrayWithNumber from '../../../../src/functions/filters/isArrayWithNumbers';
 
 describe('Not Arrays passed', () => {

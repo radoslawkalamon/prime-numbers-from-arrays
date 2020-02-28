@@ -1,5 +1,3 @@
-/* globals describe, it, expect */
-
 import getUniqueNumbers from '../../../../src/functions/reducers/getUniqueNumbers';
 
 describe('Function itself', () => {
