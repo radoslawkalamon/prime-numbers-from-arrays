@@ -1,4 +1,4 @@
-# Get prime numbers from arrays [![Build Status](https://travis-ci.org/radoslawkuswik/prime-numbers-from-arrays.svg?branch=master)](https://travis-ci.org/radoslawkuswik/prime-numbers-from-arrays)
+# Get prime numbers from arrays [![Build Status](https://travis-ci.org/radoslawkalamon/prime-numbers-from-arrays.svg?branch=master)](https://travis-ci.org/radoslawkalamon/prime-numbers-from-arrays)
 
 Get all prime numbers from arrays, sorted ascending
 
