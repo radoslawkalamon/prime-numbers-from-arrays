@@ -1,6 +1,6 @@
 {
   "name": "prime-numbers-from-arrays",
-  "version": "2.3.4",
+  "version": "2.3.5",
   "description": "Get all prime numbers from arrays, sorted ascending",
   "main": "./dist/prime-numbers-from-arrays.ts",
   "scripts": {
