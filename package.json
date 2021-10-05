@@ -1,27 +1,28 @@
 {
   "name": "prime-numbers-from-arrays",
-  "version": "2.3.3",
+  "version": "2.3.4",
   "description": "Get all prime numbers from arrays, sorted ascending",
   "main": "./dist/prime-numbers-from-arrays.ts",
   "scripts": {
     "prepare": "tsc",
     "build": "tsc",
-    "test": "npx jest"
+    "lint": "eslint src",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/radoslawkuswik/prime-numbers-from-arrays.git"
+    "url": "git+https://github.com/radoslawkalamon/prime-numbers-from-arrays.git"
   },
   "keywords": [
     "prime numbers",
     "javascript"
   ],
-  "author": "Radosław Kuświk <kontakt@radoslawkuswik.pl> (https://radoslawkuswik.pl)",
+  "author": "Radosław Kalamon <kontakt@radoslawkalamon.pl> (https://radoslawkalamon.pl)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/radoslawkuswik/prime-numbers-from-arrays/issues"
+    "url": "https://github.com/radoslawkalamon/prime-numbers-from-arrays/issues"
   },
-  "homepage": "https://github.com/radoslawkuswik/prime-numbers-from-arrays#readme",
+  "homepage": "https://github.com/radoslawkalamon/prime-numbers-from-arrays#readme",
   "devDependencies": {
     "@types/jest": "^27.0.2",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
