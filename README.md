@@ -10,6 +10,9 @@ getPrimeNumbers([12, 3], [6, 54], ..., [12334, 25124, 12351]) = [...primeNumbers
 
 ## Changelog:
 
+- 05.10.2021 - v2.3.6 - Fixed ESLint warning,
+- 05.10.2021 - v2.3.5 - GitHub Actions introduced, Travis removed,
+- 05.10.2021 - v2.3.4 - package.json update,
 - 05.10.2021 - v2.3.3 - dependencies update,
 - 28.02.2020 - v2.3.0 - TypeScript introduced.
 - 10.04.2019 - v2.2.0 - improvement based on issue #2. Many thank to @Lolf1010!
