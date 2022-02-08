@@ -10,6 +10,7 @@ getPrimeNumbers([12, 3], [6, 54], ..., [12334, 25124, 12351]) = [...primeNumbers
 
 ## Changelog:
 
+- 08.02.2022 - v2.3.7 - dependencies update,
 - 05.10.2021 - v2.3.6 - Fixed ESLint warning,
 - 05.10.2021 - v2.3.5 - GitHub Actions introduced, Travis removed,
 - 05.10.2021 - v2.3.4 - package.json update,
