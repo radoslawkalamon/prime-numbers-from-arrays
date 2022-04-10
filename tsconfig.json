@@ -5,13 +5,19 @@
     "strict": true,
     "esModuleInterop": true,
     "outDir": "dist",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
   },
   "include": [
-    "./src/prime-numbers-from-arrays.ts"
+    "src/prime-numbers-from-arrays.ts"
   ],
   "exclude": [
     "node_modules",
-    "./tests/*"
+    "test"
   ]
 }

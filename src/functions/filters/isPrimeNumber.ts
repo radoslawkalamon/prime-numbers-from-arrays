@@ -5,14 +5,14 @@
  * {@link https://en.wikipedia.org/wiki/Prime_number Wikipedia}
  */
 export default (n: number): boolean => {
-  if (n < 4) return n > 1;
-  if (n % 2 === 0 || n % 3 === 0) return false;
+  if (n < 4) return n > 1
+  if (n % 2 === 0 || n % 3 === 0) return false
 
   for (let i = 5, j = Math.round(Math.sqrt(n)); i <= j; i += 4) {
-    if (n % i === 0) return false;
-    i += 2;
-    if (n % i === 0) return false;
+    if (n % i === 0) return false
+    i += 2
+    if (n % i === 0) return false
   }
 
-  return true;
-};
+  return true
+}
